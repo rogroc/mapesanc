@@ -75,7 +75,7 @@ L.Control.BingGeocoder = L.Control.extend({
 			key : this.key,
 			jsonp : this._callbackId
 		},
-		url = 'http://dev.virtualearth.net/REST/v1/Locations' + L.Util.getParamString(params),
+		url = 'https://dev.virtualearth.net/REST/v1/Locations' + L.Util.getParamString(params),
 		script = L.DomUtil.create('script', '', document.getElementsByTagName('head')[0]);
 
 		script.type = 'text/javascript';
