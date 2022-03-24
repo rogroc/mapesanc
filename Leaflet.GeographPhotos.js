@@ -201,7 +201,7 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
 
 			var that = this; //enclosure!
 			this._request = reqwest({
-				url: 'https://gencat-my.sharepoint.com/personal/rogerrocavert_gencat_cat/_layouts/15/download.aspx?UniqueId=8167f5f768464082ab3e250739fbaf90&e=2R8g6F',
+				url: 'data_2.json',
 				type: 'jsonp',
 				jsonpCallbackName: 'bar', //we use a specific callback name, so it has consistent name, and hence the server can cache this API call. 
 				success: function (data) {
@@ -283,7 +283,7 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
 				}
 				var that = this; //enclosure!
 				this._request =  reqwest({
-	                		url: 'https://gencat-my.sharepoint.com/personal/rogerrocavert_gencat_cat/_layouts/15/download.aspx?UniqueId=8167f5f768464082ab3e250739fbaf90&e=2R8g6F',
+	                		url: 'data_2.json',
 			                type: 'jsonp',
 			                success: function (data) {
 						that._running = false;
