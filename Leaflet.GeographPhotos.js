@@ -325,7 +325,7 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
                 		        row.thumbnail = 'https://gencat-my.sharepoint.com/:i:/r/personal/rogerrocavert_gencat_cat/Documents/fotos_roig/thumbs/'+row.CR+'.jpg?csf=1&web=1&e=EOgaMP';
 //document.write(row.thumbnail);
 					//row.url = 'https://gencat-my.sharepoint.com/:i:/r/personal/rogerrocavert_gencat_cat/Documents/fotos_roig/'+row.CR+'.jpg?csf=1&web=1&e=EOgaMP';
-		                        row.url = 'fotos/'+row.CR+'.jpg';
+		                        row.url = 'https://gencat-my.sharepoint.com/:i:/r/personal/rogerrocavert_gencat_cat/Documents/fotos_roig/fotos/'+row.CR+'.jpg?csf=1&web=1&e=EOgaMP';
 //document.write(row.url);
                 		        row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+", "+row.llocpr+"<br>"+row.data;
 
