@@ -227,15 +227,20 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
 						if (that.options.autoLoadOnMove)
 							that._map.on('moveend', that.requestData, that);
 					} else {
-						var message = data.meta.total_found+' images';
+						var message = data.meta.total_found+' imatges';
 
 						//we've displayed all matching images, so dont need to update fetch more results when zoom
 					}
 
-					that.outputStatus("Loaded "+message);
+					that.outputStatus("Fons Germans Roig de l'arxiu Albert Bastardes (ANC1-1360)");
 					this._initialDone = true;
 				}
 			});
+
+const data = data_2.json;
+const arr2 = data.filter(d => d.llocpr === 'Vallvidrera');
+document.write('arr2', arr2);
+
 //document.write(this.options.endpoint+'?match='+query+'&select='+this.options.select+'&order=sequence+asc&limit=1000&callback=bar&key='+this.options.api_key+this.options.extra);
 
 		},
@@ -322,17 +327,17 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
 //document.write(row.id);
 
 //document.write(row.link+' ');
-                		        row.thumbnail = 'https://gencat-my.sharepoint.com/:i:/r/personal/rogerrocavert_gencat_cat/Documents/fotos_roig/thumbs/'+row.CR+'.jpg?csf=1&web=1&e=EOgaMP';
+                		        row.thumbnail = 'thumbs/'+row.CR+'.jpg';
 //document.write(row.thumbnail);
 					//row.url = 'https://gencat-my.sharepoint.com/:i:/r/personal/rogerrocavert_gencat_cat/Documents/fotos_roig/'+row.CR+'.jpg?csf=1&web=1&e=EOgaMP';
-		                        row.url = 'https://gencat-my.sharepoint.com/:i:/r/personal/rogerrocavert_gencat_cat/Documents/fotos_roig/fotos/'+row.CR+'.jpg?csf=1&web=1&e=EOgaMP';
+		                        row.url = 'fotos/'+row.CR+'.jpg';
 //document.write(row.url);
-                		        row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+", "+row.llocpr+"<br>"+row.data;
+                		        row.caption = "ANC1-N-1360/"+row.id+"<br>"+row.titol+"<br>"+row.lloc+", "+row.llocpr+"<br>"+row.data;
 
 					if (row.llocpr == null) {
-						row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"<br>"+row.data;
+						row.caption = "ANC1-N-1360/"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"<br>"+row.data;
 					} else {
-						row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"; "+row.llocpr+"<br>"+row.data;
+						row.caption = "ANC1-N-1360/"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"; "+row.llocpr+"<br>"+row.data;
 					}
 //document.write(row.caption);
 		                        
