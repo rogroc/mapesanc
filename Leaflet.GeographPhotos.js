@@ -332,9 +332,9 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
                 		        row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+", "+row.llocpr+"<br>"+row.data;
 
 					if (row.llocpr == null) {
-						row.caption = "ANC1-N-1360/"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"<br>"+row.data;
+						row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"<br>"+row.data;
 					} else {
-						row.caption = "ANC1-N-1360/"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"; "+row.llocpr+"<br>"+row.data;
+						row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"; "+row.llocpr+"<br>"+row.data;
 					}
 //document.write(row.caption);
 		                        
