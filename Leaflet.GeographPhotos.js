@@ -83,7 +83,7 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
 		                var photo = evt.layer.photo,
 		                        template = '<a href="{link}" target=newwin><img src="{url}"/></a><p>{caption}</p>';
 
-		                evt.layer.bindPopup(L.Util.template(template, photo), {
+		                evt.layer.bindPopup(L.Util.template('<a href="{link}" target=newwin><img src="{url}"/></a><p>{captionb}</p>', photo), {
 		                        className: 'leaflet-popup-photo',
 		                        minWidth: 421
 		                }).openPopup();
@@ -332,9 +332,11 @@ if (L.MarkerClusterGroup && L.Photo.Cluster) {
                 		        //row.caption = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+", "+row.llocpr+"<br>"+row.data;
 
 					if (row.llocpr == null) {
-						row.caption = "ANC1-1360-N-"+row.id+"\n"+row.titol+"<br>"+row.lloc+"<br>"+row.data;
+						row.caption = "ANC1-1360-N-"+row.id+"\n"+row.titol+"\n"+row.lloc+"\n"+row.data;
+						row.captionb = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"<br>"+row.data;
 					} else {
-						row.caption = "ANC1-1360-N-"+row.id+"\n"+row.titol+"<br>"+row.lloc+"; "+row.llocpr+"<br>"+row.data;
+						row.caption = "ANC1-1360-N-"+row.id+"\n"+row.titol+"\n"+row.lloc+"; "+row.llocpr+"\n"+row.data;
+						row.captionb = "ANC1-1360-N-"+row.id+"<br>"+row.titol+"<br>"+row.lloc+"; "+row.llocpr+"<br>"+row.data;
 					}
 //document.write(row.caption);
 		                        
